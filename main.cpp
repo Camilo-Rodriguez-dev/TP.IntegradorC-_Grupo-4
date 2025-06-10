@@ -29,7 +29,7 @@ int main()
         // Funcion que visualiza el menu del juego
         mostrarMenu();
         // Funcion que pide la eleccion numerica al usuario y retorna la misma
-        elegirOpcion(opcion);
+        opcion = elegirOpcion();
         int opcionSalir;
         // Variables que almacenan los puntos y bugs acumulados por cada jugador en cada partida
         int puntosAcumuladosJ1 = 0, puntosAcumuladosJ2 = 0;
@@ -63,7 +63,7 @@ int main()
             break;
         case 0:
             // Funcion que solicita al usuario confirmar su eleccion de salida del juego y retorna dicha eleccion
-            elegirOpcion(opcionSalir);
+            opcionSalir = elegirOpcion();
             if (opcionSalir == 0)
             {
                 return 0;
